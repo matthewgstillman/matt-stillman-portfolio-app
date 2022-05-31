@@ -7,20 +7,12 @@ const ProjectsComponent = () => {
     <div>
       <NavbarComponent/> 
       <Container>
-        <Row>
-          <Col xs={6} md={4}>
-            <Image src="https://picsum.photos/id/1/200/300" rounded />
-          </Col>
-          <Col xs={6} md={4}>
-            <Image
-              src="https://i.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68"
-              circle
-            />
-          </Col>
-          <Col xs={6} md={4}>
-            <Image src="/thumbnail.png" thumbnail />
-          </Col>
-        </Row>
+      <Image
+                data-testid="homeHeaderImage"
+                className="home-component-image"
+                src="https://i.picsum.photos/id/1002/4312/2868.jpg?hmac=5LlLE-NY9oMnmIQp7ms6IfdvSUQOzP_O3DPMWmyNxwo"
+                />
+                <br />
       </Container>
     </div>
   );

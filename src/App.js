@@ -4,18 +4,18 @@ import HomeComponent from "./components/HomeComponent";
 import ContactComponent from "./components/ContactComponent";
 import ProjectsComponent from "./components/ProjectsComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
       <div>
-          <Router>
+          <BrowserRouter>
           <div className="App">
             <Routes>
               <Route
                 exact
                 path="/"
-                component={HomeComponent}
+                element={<HomeComponent/>}
                 data-testid="homeComponentRoute"
               />
             </Routes>
@@ -23,7 +23,7 @@ function App() {
               <Route
                 exact
                 path="/projects"
-                component={ProjectsComponent}
+                element={<ProjectsComponent/>}
                 data-testid="projectsComponentRoute"
               />
             </Routes>
@@ -31,14 +31,12 @@ function App() {
               <Route
                 exact
                 path="/contact"
-                component={ContactComponent}
+                elementt={<ContactComponent/>}
                 data-testid="contactComponentRoute"
               />
             </Routes>
           </div>
-        </Router>
-        {/* <HomeComponent/> */}
-        <ContactComponent/>
+        </BrowserRouter>
       </div>
   );
 }
