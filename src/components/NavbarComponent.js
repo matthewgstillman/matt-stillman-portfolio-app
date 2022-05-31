@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../css/main.css";
 
-const Navbar = () => {
+const NavbarComponent = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
     
   return (
@@ -40,4 +40,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarComponent;
