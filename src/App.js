@@ -18,16 +18,12 @@ function App() {
                 element={<HomeComponent/>}
                 data-testid="homeComponentRoute"
               />
-            </Routes>
-            <Routes>
               <Route
                 exact
                 path="/projects"
                 element={<ProjectsComponent/>}
                 data-testid="projectsComponentRoute"
               />
-            </Routes>
-            <Routes>
               <Route
                 exact
                 path="/contact"

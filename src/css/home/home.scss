@@ -1,10 +1,23 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+body {
+  background-color: rgba(255, 0, 60, 0.05);
+}
+
 .home-component-image{
-    width: 65%;
+    width: 50;
     box-shadow: 8px 8px 10px black;
     margin-bottom: 75px;
     align-items: center;
     margin-bottom: 40px;
     display: inline-flex;
+
+    &:hover{
+        opacity: .45;
+    }
+
+    &:hover .middle{
+        opacity: .45;
+    }
 }
 
 .container{
@@ -12,7 +25,27 @@
     align-items: center;
     justify-content: center;
     padding-top: 50px;
+
+    &:hover .home-component-image{
+        opacity: 0.3;
+        background-color: antiquewhite;
+    }
+
+    &:hover .middle{
+        opacity: .45;
+    }
 }
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 .paragraph-container p {
     font-size: 18px;
@@ -21,4 +54,93 @@
     text-align: center;
     margin: 0 auto;
     max-width: 70%;
+}
+
+.text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+//Social Media Icons
+.social-container {
+    width: 400px;
+    margin: 40vh auto;
+    text-align: center;
+}
+  
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 1em;
+
+    & li{
+        display: inline-block;
+        margin: 0.15em;
+        position: relative;
+        font-size: 1.2em;
+    }
+
+    & i {
+        color: #fff;
+        position: absolute;
+        top: 21px;
+        left: 21px;
+        transition: all 265ms ease-out;
+    }
+
+    & a {
+        display: inline-block;
+
+        &:before{
+            transform: scale(1);
+            -ms-transform: scale(1);
+            -webkit-transform: scale(1);
+            content: " ";
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            display: block;
+            background: linear-gradient(45deg, #ff003c, #c648c8);
+            transition: all 265ms ease-out;
+        }
+
+        &:hover:before {
+            transform: scale(0);
+            transition: all 265ms ease-in;
+          }
+
+        &:hover i {
+            transform: scale(2.2);
+            -ms-transform: scale(2.2);
+            -webkit-transform: scale(2.2);
+            color: #ff003c;
+            background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 265ms ease-in;
+          }
+        
+          &.social-square:before {
+            background: linear-gradient(45deg, #7b00e0, #ae31d9);
+            border-radius: 10%;
+          }
+
+          &.social-square:hover:before {
+            transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            -webkit-transform: scale(-180deg);
+            border-radius: 100%;
+          }
+
+          &.social-square:hover i {
+            transform: scale(1.6);
+            -ms-transform: scale(1.6);
+            -webkit-transform: scale(1.6);
+            color: #fff;
+            transform: scale(1.6);
+            -webkit-text-fill-color: #fff;
+          }
+    }
 }
