@@ -5,6 +5,7 @@ import ContactComponent from "./components/ContactComponent";
 import ProjectsComponent from "./components/ProjectsComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SocialIcons from "./components/SocialIcons";
 
 function App() {
   return (
@@ -25,7 +26,6 @@ function App() {
                 data-testid="projectsComponentRoute"
               />
               <Route
-                exact
                 path="/contact"
                 elementt={<ContactComponent/>}
                 data-testid="contactComponentRoute"
