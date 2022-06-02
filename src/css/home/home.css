@@ -5,12 +5,12 @@ body {
 
 .about-paragraph {
   font-size: x-large;
-  width: 2000px;
   text-align: center;
 }
 .about-paragraph__container {
   background-color: #c648c8;
-  width: 500px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .container {
@@ -19,10 +19,12 @@ body {
   justify-content: center;
   padding-top: 50px;
 }
+
 .container:hover .home-component-image {
   opacity: 0.3;
   background-color: antiquewhite;
 }
+
 .container:hover .middle {
   opacity: 0.45;
 }
@@ -40,12 +42,6 @@ body {
   box-shadow: 8px 8px 10px black;
   align-items: center;
   margin-bottom: 40px;
-}
-.home-component-image:hover {
-  opacity: 0.45;
-}
-.home-component-image:hover .middle {
-  opacity: 0.45;
 }
 
 .social-container {
@@ -87,10 +83,12 @@ body {
   background: linear-gradient(45deg, #ff003c, #c648c8);
   transition: all 265ms ease-out;
 }
+
 .social-icons a:hover:before {
   transform: scale(0);
   transition: all 265ms ease-in;
 }
+
 .social-icons a:hover i {
   transform: scale(2.2);
   -ms-transform: scale(2.2);
@@ -101,16 +99,19 @@ body {
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
 }
+
 .social-icons a.social-square:before {
   background: linear-gradient(45deg, gray, silver);
   border-radius: 10%;
 }
+
 .social-icons a.social-square:hover:before {
   transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
   -webkit-transform: scale(-180deg);
   border-radius: 100%;
 }
+
 .social-icons a.social-square:hover i {
   transform: scale(1.6);
   -ms-transform: scale(1.6);
@@ -136,7 +137,6 @@ body {
     text-align: center;
   }
   .about-paragraph__container {
-    background-color: #c648c8;
     width: 80%;
     text-align: center;
   }

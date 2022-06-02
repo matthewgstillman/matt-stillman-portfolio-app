@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
 @import 'navbar/navbar.css';
+@import 'home/home.css';
+/* @import 'home/projects/projects.css'; */
 html, body {
   width: 100%;
   height: 100%;

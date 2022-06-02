@@ -5,12 +5,12 @@ body {
 
 .about-paragraph{
     font-size: x-large;
-    width: 2000px;
     text-align: center;
 
     &__container{
         background-color: #c648c8;
-        width: 500px;
+        width: 50%;
+        margin: 0 auto;
     }
 }
 
@@ -44,14 +44,6 @@ body {
     box-shadow: 8px 8px 10px black;
     align-items: center;
     margin-bottom: 40px;
-
-    &:hover{
-        opacity: .45;
-    }
-
-    &:hover .middle{
-        opacity: .45;
-    }
 }
 
 //Social Media Icons
@@ -153,7 +145,6 @@ body {
         
     
         &__container{
-            background-color: #c648c8;
             width: 80%;
             text-align: center;
         }

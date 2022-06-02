@@ -2,11 +2,13 @@ import '../css/main.css';
 import NavbarComponent from "./NavbarComponent";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import SocialIcons from './SocialIcons';
+import ContactComponent from './ContactComponent';
 
 const HomeComponent = () => {
   return (
     <div>
       <NavbarComponent />
+      <ContactComponent/>
       <Image
           fluid
           data-testid="homeHeaderImage"
