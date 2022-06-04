@@ -8,18 +8,12 @@ const HomeComponent = () => {
   return (
     <div>
       <NavbarComponent />
-      <ContactComponent/>
       <Image
           fluid
           data-testid="homeHeaderImage"
           className="home-component-image"
           src="https://drive.google.com/uc?export=view&id=1nDgCB-2NjG0MUMxdogTHvHC8OnVZr1ZE"
       /> 
-            {/* <Image
-                data-testid="homeHeaderImage"
-                className="home-component-image"
-                src="https://drive.google.com/uc?export=view&id=1nDgCB-2NjG0MUMxdogTHvHC8OnVZr1ZE"
-            /> */}
         <div className="about-paragraph__container">
               <h1>About</h1>
               <p className="about-parahraph">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. 
