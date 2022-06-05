@@ -1,11 +1,9 @@
 import "./css/main.css";
-import Navbar from "./components/NavbarComponent";
 import HomeComponent from "./components/HomeComponent";
-import ContactComponent from "./components/ContactComponent";
 import ProjectsComponent from "./components/ProjectsComponent";
+import ContactComponent from "./components/ContactComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import SocialIcons from "./components/SocialIcons";
 
 function App() {
   return (
@@ -16,8 +14,8 @@ function App() {
               <Route
                 exact
                 path="/"
-                element={<HomeComponent/>}
                 data-testid="homeComponentRoute"
+                element={<HomeComponent/>}
               />
               <Route
                 exact
@@ -26,15 +24,15 @@ function App() {
                 data-testid="projectsComponentRoute"
               />
               <Route
+                exact
                 path="/contact"
-                elementt={<ContactComponent/>}
+                element={<ContactComponent/>}
                 data-testid="contactComponentRoute"
               />
             </Routes>
           </div>
         </BrowserRouter>
-        {/* <ContactComponent/> */}
-      </div>
+\      </div>
   );
 }
 
