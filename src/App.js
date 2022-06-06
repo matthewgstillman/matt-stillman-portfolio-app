@@ -2,8 +2,10 @@ import "./css/main.css";
 import HomeComponent from "./components/HomeComponent";
 import ProjectsComponent from "./components/ProjectsComponent";
 import ContactComponent from "./components/ContactComponent";
+import ContactFormComponent from "./components/ContactFormComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 
 function App() {
   return (
@@ -26,7 +28,7 @@ function App() {
               <Route
                 exact
                 path="/contact"
-                element={<ContactComponent/>}
+                element={<ContactFormComponent/>}
                 data-testid="contactComponentRoute"
               />
             </Routes>
