@@ -32,7 +32,7 @@ const ContactFormComponent = () => {
             templateParams,
             process.env.REACT_APP_USER_ID
           );
-          reset();
+          // reset();
         } catch (e) {
           console.log(e);
         }
