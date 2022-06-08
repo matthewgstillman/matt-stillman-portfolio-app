@@ -1,8 +1,6 @@
 import "./css/main.css";
 import HomeComponent from "./components/HomeComponent";
 import ProjectsComponent from "./components/ProjectsComponent";
-import ContactComponent from "./components/ContactComponent";
-import ContactFormComponent from "./components/ContactFormComponent";
 import NewContactFormComponent from "./components/NewContactFormComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
