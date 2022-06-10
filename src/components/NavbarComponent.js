@@ -16,7 +16,6 @@ const NavbarComponent = () => {
           setIsNavExpanded(!isNavExpanded)
         }}
       >
-        {/* hamburger svg code... */}
       </button>
       <div
         className={
