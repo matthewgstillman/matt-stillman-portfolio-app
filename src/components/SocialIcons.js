@@ -1,5 +1,7 @@
 import React from 'react';
 import "../css/home/home.css";
+import "../css/main.css";
+
 
 const SocialIcons = () => {
   return (

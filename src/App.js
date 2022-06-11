@@ -1,4 +1,4 @@
-import "./css/main.css";
+import "./css/main.scss";
 import HomeComponent from "./components/HomeComponent";
 import ProjectsComponent from "./components/ProjectsComponent";
 import NewContactFormComponent from "./components/NewContactFormComponent";

@@ -1,7 +1,7 @@
 import '../css/main.css';
 import NavbarComponent from "./NavbarComponent";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import SocialIcons from './SocialIcons';
+import profilePic from "../Images/profilePic.jpg";
 
 const HomeComponent = () => {
   return (
@@ -11,7 +11,7 @@ const HomeComponent = () => {
           fluid
           data-testid="homeHeaderImage"
           className="home-component-image"
-          src="https://drive.google.com/uc?export=view&id=1nDgCB-2NjG0MUMxdogTHvHC8OnVZr1ZE"
+          src={profilePic}
       /> 
         <div className="about-paragraph__container">
               <h1>About</h1>

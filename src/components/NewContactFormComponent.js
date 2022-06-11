@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import NavbarComponent from "./NavbarComponent";
 import "../css/main.css";
+import profilePic from "../Images/profilePic.jpg";
+
 
 const NewContactFormComponent = () => {
   const form = useRef();

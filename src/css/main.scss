@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
-@import 'navbar/navbar.css';
-@import 'home/home.css';
-@import 'projects/projects.css';
-@import 'contact/contact.css';
+//CSS
+@import 'navbar/navbar';
+@import 'home/home';
+@import 'projects/projects';
+@import 'contact/contact';
+@import 'social/social';
 
 html, body {
     width: 100%;
