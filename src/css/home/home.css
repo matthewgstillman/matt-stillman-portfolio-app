@@ -18,6 +18,7 @@ body {
   align-items: center;
   justify-content: center;
   padding-top: 50px;
+  min-width: 200px;
 }
 .container:hover .home-component-image {
   opacity: 0.3;
