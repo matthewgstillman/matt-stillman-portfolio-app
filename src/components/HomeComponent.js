@@ -1,12 +1,12 @@
 import "../css/main.css";
-import NavbarComponent from "./NavbarComponent";
+import UpdatedNavbarComponent from "./UpdatedNavbarComponent";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import profilePic from "../Images/profilePic.jpg";
 
 const HomeComponent = () => {
   return (
     <div>
-      <NavbarComponent />
+      <UpdatedNavbarComponent />
       <div className="container">
         <Image
           fluid

@@ -1,9 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import NavbarComponent from "./NavbarComponent";
+import UpdatedNavbarComponent from "./UpdatedNavbarComponent";
 import "../css/main.css";
 import profilePic from "../Images/profilePic.jpg";
-
 
 const NewContactFormComponent = () => {
   const form = useRef();
@@ -30,7 +29,7 @@ const NewContactFormComponent = () => {
   };
   return (
     <div>
-      <NavbarComponent />
+      <UpdatedNavbarComponent />
       <div class="container">
         <div class="row">
           <div class="col align-self-center">

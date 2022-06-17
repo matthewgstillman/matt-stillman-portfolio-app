@@ -1,12 +1,12 @@
 import React from "react";
-import NavbarComponent from "./NavbarComponent";
+import UpdatedNavbarComponent from "./UpdatedNavbarComponent";
 import "../css/main.css";
 import omdb from "../Images/omdbProjectScreenshot.png";
 
 const ProjectsComponent = () => {
   return (
     <div>
-      <NavbarComponent />
+      <UpdatedNavbarComponent />
       <div class="flip-card" tabIndex="0">
         <div class="flip-card-inner">
           <div class="flip-card-front">
